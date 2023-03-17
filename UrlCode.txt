@@ -1,10 +1,18 @@
 
-## import package to environment
+###import package to environment
+
 import pyshortners
-#use module shortner
+
+###use module shortner
+
 s = pyshortneres.Shortener(api_key = "fb")
-#Give the actual URL as input
+
+###Give the actual URL as input
+
 longURL = input("Enter URL: ")
-#use bitly to convert the longurl to shorturl using api_key provided.
+
+###use bitly to convert the longurl to shorturl using api_key provided.
+
 shortURL = s.bitly.short(longURL)
+
 print("Shortened URL: " + shortURL)
